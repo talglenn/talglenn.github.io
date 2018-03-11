@@ -9,10 +9,6 @@ function myFunction1()
     }
 }
 
-// $("#first").flip();
-// $("#second").flip();
-// $("#third").flip();
-// $("#fourth").flip();
 
 //Sticky nav code
 window.onscroll = function() {myFunction()};
