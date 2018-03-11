@@ -16,7 +16,7 @@ body {
 #banner {
   padding-top:50px;
   height:700px;
-  color: #fff; 
+  color: rgb(231, 136, 136); 
   background-image: url("/images/plane.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -30,6 +30,7 @@ body {
   height:850px;
   background-color: #FFFFFF;
   color: #333333;
+  word-spacing: normal;
 }
 
 
@@ -47,13 +48,14 @@ body {
   margin: 0 auto;
 }
 
+
 .left {
   float: left;
   width: 45%;
 }
 .right {
   float: right;
-  width: 45%;
+  width: 40%;
   /* padding-left: 45px; */
   /* padding-top: 15px; */
 }
@@ -81,7 +83,7 @@ body {
 .skills {
   text-align: right; /* Right-align text */
   padding-right: 20px; /* Add some right padding */
-  line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+  line-height: 30px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
   color: white; /* White text color */
 }
 
@@ -368,6 +370,13 @@ footer {
   font-size: 20px;
   /* padding-top: 25px; */
   padding-bottom: 25px;
+  
+}
+
+#tg {
+  
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -377,6 +386,7 @@ ul {
 
 li a {
 }
+
 
 #contact-me-title {
   color: #262626;
