@@ -40,12 +40,13 @@ body {
   width: 100%;
   max-width: 200px;
   height: 200px;
-  background-image: url("/images/graduate.jpg");
-  background-size: 300px;
+  background-image: url("/images/IMG_2008.jpg");
+  background-size: 190px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-clip: padding-box;
   margin: 0 auto;
+  margin-top: 15px;
   
 }
 /* .rotate90 {
@@ -60,6 +61,7 @@ body {
 .left {
   float: left;
   width: 45%;
+  margin-left: 35px;
 }
 .right {
   margin-top: 50px;
