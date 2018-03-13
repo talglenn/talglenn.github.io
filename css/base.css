@@ -78,6 +78,11 @@ body {
   }
 }
 
+@media screen and (max-width: 480px){
+  #mycanvas {
+    margin-left: 50px;
+  }
+}
 
 /* Container for skill bars */
 .container {
