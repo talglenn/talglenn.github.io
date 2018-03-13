@@ -28,4 +28,32 @@ function myFunction() {
   }
 }
 
+//Piechart
+$(document).ready(function(){
+  var ctx = $("#mycanvas").get(0).getContext("2d");
 
+  //pie chart data
+  //sum of values = 360
+  var data = [
+    {
+      value: 150,
+      color: "blue",
+      highlight: "royalblue",
+      label: "HTML"
+    },
+    {
+      value: 120,
+      color: "lightgreen",
+      highlight: "yellowgreen",
+      label: "CSS"
+    },
+    {
+      value: 90,
+      color: "orange",
+      highlight: "darkorange",
+      label: "Javascript"
+    }
+  ];
+
+  var piechart = new Chart(ctx).Pie(data);
+});
