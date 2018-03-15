@@ -68,9 +68,11 @@ body {
   float: right;
   margin-right: 10px;
   margin-top: 420px;
+  width: 100%;
+  text-align: center;
   font-family: 'Open Sans', Arial;
   font-weight: 200;
-  font-size: 2vw;
+  font-size: 10px;
   color: #444444;
 
 }
@@ -515,7 +517,7 @@ footer {
 
 /* About Me */
 #about-text {
-  font-size: 5vw;
+  font-size: 20px;
   font-family: 'Open sans', sans-serif;
 }
 
@@ -537,7 +539,7 @@ footer {
   font-family: 'Open sans', sans-serif;
   color: #444444;
   text-align: left;
-  font-size: 5vw;
+  font-size: 20px;
   /* padding-top: 25px; */
   padding-bottom: 25px;
   
@@ -564,7 +566,7 @@ ul {
 }
 
 form label {
-  font-size: 4vw;
+  font-size: 20px;
   font-family: 'Open sans', sans-serif;
 }
 
