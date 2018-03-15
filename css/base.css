@@ -98,9 +98,6 @@ body {
   word-spacing: normal;
 }
 
-.left h1 {
-  font-family: sans-serif;
-}
 @media(min-width: 480px) {
   .row{
     display: flex;
@@ -108,19 +105,19 @@ body {
     justify-content: center;
     align-items: center;
     }
-  .right {
+  .box-2 {
     justify-content: center;
     align-items: center;
   }
-    
+
 }
 
-.left {
+.box-1 {
   flex: 1;
   padding: 20px;
 }
 
-.right {
+.box-2 {
   flex: 1;
   padding: 20px;
 
@@ -515,45 +512,38 @@ footer {
 
 
 /* Text */
-#greetings {
-  color: white;
-  text-align: center;
-  padding-top: 300px;
-  width: 100%;
-}
-#about-me-section-title {
-  font-family: 'Comfortaa', cursive;
-  text-align: center;
-  width: 100%;
-}
-#about-h1 {
-  text-align: center;
-  
+
+/* About Me */
+#about-text {
+  font-size: 5vw;
+  font-family: 'Open sans', sans-serif;
 }
 
+.left h1 {
+  font-family: sans-serif;
+}
+/* End About Me */
+
+/* Projects */
 #projects-section-title {
-  color: black;
-  font-family: 'Comfortaa', cursive;
+  color: #444444;
+  font-family: sans-serif;
   text-align: center;
   width: 100%;
-  text-decoration-line: underline;
 }
 
-#about {
-  width: 400px;
-  border-style: 6px solid black;
-}
 
-#text {
+.proj-text {
+  font-family: 'Open sans', sans-serif;
+  color: #444444;
   text-align: left;
-  font-size: 20px;
+  font-size: 5vw;
   /* padding-top: 25px; */
   padding-bottom: 25px;
   
 }
 
 #tg {
-  
   padding: 0;
   margin: 0;
 }
@@ -562,14 +552,26 @@ ul {
   list-style-type: none;
   
 }
+/* End of Projects */
 
-
-
+/* Contact me */
 #contact-me-title {
-  color: #262626;
-  font-family: 'Comfortaa', cursive;
+  color: #444444;
+  font-family: sans-serif;
   text-align: center;
   width: 50%;
   margin: 0 auto;
 }
+
+form label {
+  font-size: 4vw;
+  font-family: 'Open sans', sans-serif;
+}
+
+form ::-webkit-input-placeholder{
+  color: #444444;
+  font-size: 12px;
+}
+/* End of Contact */
+
 /* End of Text */
