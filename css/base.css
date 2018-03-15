@@ -14,7 +14,6 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
   }
   
 /* Banner */
@@ -32,15 +31,15 @@ body {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 100%;
+  
   /* display: flex; */
 }
 .fly-in-text li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 3px;
   font-family: 'Open Sans', Arial;
   font-weight: 300;
-  font-size: 6.5vw;
+  font-size: 7vw;
   color: #fff;
   opacity: 1;
   transition: all 2.5s ease;
@@ -63,101 +62,45 @@ body {
 .fly-in-text.hidden li:nth-child(6) {transform: translateX(-20px) translateY(-20px);}
 .fly-in-text.hidden li:nth-child(7) {transform: translateX(-600px) translateY(-200px);}
 .fly-in-text.hidden li:nth-child(8) {transform: translateX(30px) translateY(200px);}
-/* Resume button */
-button:focus {
-  border: none;
-  outline: none;
-  }
-  
-  .button {
-  height: 40px;
-  margin-top: 400px;
-  margin-left: 300px;
-  margin-right: 5px;
-  padding: 0px 16px;
-  border: none;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
-  background: #4C0100;
-  display: flex;
-  width: 15vw;
-  display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items:  center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  border-radius: 20px;
-  transform: scale(1,1);
-  transition: all 0.3s ease;
-  }
 
-  #last-n {
-    /* margin-left: 10p; */
+.banner-labels {
+  display: inline;
+  float: right;
+  margin-right: 10px;
+  margin-top: 420px;
+  font-family: 'Open Sans', Arial;
+  font-weight: 200;
+  font-size: 2vw;
+  color: #444444;
+
+}
+.fade-in { 
+  flex: 1;
+  animation: fadeIn 8s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
   
-  .button:hover {
-  transform: scale(1.1,1.1);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 1);
-  }
 /* End of Banner */
 
 /* About me section */
 #about-me-section {
   height:auto;
-  background-color: #333333;
-  color: #FFFFFF;
+  background-color: #fdfdfd;
+  color: #444444;
   word-spacing: normal;
 }
 
-
-#image {
-  border-radius: 50%;
-  width: 100%;
-  max-width: 200px;
-  height: 200px;
-  background-image: url("/images/IMG_2008.jpg");
-  background-size: 190px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-clip: padding-box;
-  margin: 0 auto;
-  margin-top: 15px;
-  
+.left h1 {
+  font-family: sans-serif;
 }
-
-/* @media screen and(max-width: 480px){
-  .about-h3 {
-    display: flex;
-   
-  }
-} */
-
-.about-h3 {
-  display: flex;
-  text-align: center;
-  /* width: 60%; */
-  justify-content: center;
-  
-}
-.about-h3 div {
-  /* border: 1px solid blue;   */
-  /* flex-basis: 50%; */
-}
-
-.box-1 {
-  flex: 1;
-}
-.box-2 {
-  flex: 1;
-}
-.box-3 {
-  flex: 1;
-}
-
 @media(min-width: 480px) {
   .row{
     display: flex;
@@ -184,46 +127,13 @@ button:focus {
 }
 
 
-  
-/* .left {
-  float: left;
-  width: 45%;
-  margin-left: 35px;
-}
-.right {
-  margin-top: 50px;
-  float: right;
-  width: 40%;
-  
-}
-.row:after {
-  content:"";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 480px) {
-  .left, 
-  .right {
-      float: none;
-      width: auto;
-
-  }
-}
-
-@media screen and (max-width: 480px){
-  #mycanvas {
-    margin-left: 50px;
-  }
-} */
-
 
 /* End of About me section */
 
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333333;
+  background-color: #000000;
   overflow: hidden;
 }
 
@@ -231,18 +141,19 @@ button:focus {
 .topnav a {
   float: left;
   display: block;
-  color: white;
+  color: #4D4D4D;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: sans-serif;
 }
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #4D4D4D;
+  /* background-color: #4D4D4D; */
   color: white;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -261,10 +172,10 @@ button:focus {
   font-size: 17px; 
   border: none;
   outline: none;
-  color: white;
+  color: #333333;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: sans-serif;
   margin: 0;
 }
 
@@ -272,7 +183,7 @@ button:focus {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #111111;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -281,7 +192,7 @@ button:focus {
 /* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: black;
+  color: #ccc;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -290,7 +201,7 @@ button:focus {
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+  /* background-color: #555; */
   color: white;
 }
 
