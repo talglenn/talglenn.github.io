@@ -81,6 +81,11 @@ body {
   animation: fadeIn 8s;
 }
 
+/* .fade-in:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+} */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -89,6 +94,7 @@ body {
     opacity: 1;
   }
 }
+
   
 /* End of Banner */
 
@@ -140,7 +146,7 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: #4D4D4D;
+  color: #ccc;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -171,7 +177,7 @@ body {
   font-size: 17px; 
   border: none;
   outline: none;
-  color: #333333;
+  color: #ccc;
   padding: 14px 16px;
   background-color: inherit;
   font-family: sans-serif;
@@ -233,6 +239,7 @@ body {
   right: 0;
   top: 0;
 }
+
 .topnav.responsive a {
   float: none;
   display: block;
