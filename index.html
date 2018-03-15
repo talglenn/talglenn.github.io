@@ -9,28 +9,68 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js">
+    <script src="/js/header.js"></script>
     <script src="/js/chartJS.js"></script>
     <title>My Portfolio</title>
 </head>
 <body>
     <header id="banner">
-        <h1 id="greetings">Hello, My name is Tal Glenn and I make websites!</h1>
+        <!-- <h1 id="greetings">Hello, My name is Tal Glenn and I make websites!</h1> -->
+        <ul class="fly-in-text hidden">
+            <li>T</li>
+            <li>A</li>
+            <li>L</li>
+            <li>G</li>
+            <li>L</li>
+            <li>E</li>
+            <li>N</li>
+            <li>N</li>
+        </ul>
     </header>
     
     <div id="about-me-section" class="container-fluid">
-        <nav class="nav-menu" id="myNavMenu">
+        <!-- <nav class="nav-menu" id="myNavMenu">
             <a href="#about-me-section" class="scrollto">Home</a>
             <a href="#projects-section" class="scrollto">Projects</a>
             <a href="#contact-me" class="scrollto">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction1()">&#9776;</a>
-        </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav> -->
+
+        <div class="topnav" id="myTopnav">
+                <a href="#banner" class="active" class="scrollto">Home</a>
+                <a href="#about-me-section" class="scrollto">About</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Projects 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#" class="scrollto">Lotus Rest..</a>
+                        <a href="#" class="scrollto">La Famila</a>
+                        <a href="#" class="scrollto">Digital Clock</a>
+                        <a href="#" class="scrollto">Temp Convert..</a>
+
+                    </div>
+                </div> 
+                <a href="#contact-me" class="scrollto">Contact</a>            
+                <a href="javascript:void(0);" class="icon" onclick="myFunction1()">&#9776;</a>
+              </div>
         
         <div id="image" class="rotate90"></div>
+        <br>
         <h1 id="about-h1">Tal Glenn</h1>  
+        <br>
         <div class="about-h3">
-            <h3>Front-end Developer</h3>
-            <h3>Bachelor of Science, Information Technology</h3>
+            <div class="box-1">
+                <h3>Front-end Developer</h3>
+            </div>
+            <div class="box-2">
+                <h3>LOGO</h3>
+            </div>
+            <div class="box-3">
+                <h3>Bachelor of Science, Information Technology</h3>
+            </div>
         </div>
+        <br>
         <div class="row">
             <div class="left">
                 <h1>About me</h1>
@@ -146,6 +186,5 @@
       <script src="/js/script.js"></script>
       <script src="https://code.jquery.com/jquery-2.1.4.min.js">  </script>
       <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-
 </body>
 </html>

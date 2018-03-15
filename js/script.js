@@ -1,11 +1,11 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction1() 
 {
-    var x = document.getElementById("myNavMenu");
-    if (x.className === "nav-menu") {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
         x.className += " responsive";
     } else {
-        x.className = "nav-menu";
+        x.className = "topnav";
     }
 }
 
@@ -14,7 +14,7 @@ function myFunction1()
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("myNavMenu");
+var navbar = document.getElementById("myTopnav");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -32,6 +32,14 @@ function myFunction() {
 $(document).ready(function(){
   var ctx = $("#mycanvas").get(0).getContext("2d");
 
+  options = {
+    legend: {
+      display: true
+    },
+    pieceLabel: {
+      render: 'label'
+    }
+  };
   //pie chart data
   //sum of values = 360
   var data = [
@@ -53,6 +61,7 @@ $(document).ready(function(){
       highlight: "darkorange",
       label: "Javascript"
     }
+    
   ];
 
   var piechart = new Chart(ctx).Pie(data);
