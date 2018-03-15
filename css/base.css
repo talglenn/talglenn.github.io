@@ -33,6 +33,7 @@ body {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 100%;
+  /* display: flex; */
 }
 .fly-in-text li {
   display: inline-block;
@@ -62,14 +63,53 @@ body {
 .fly-in-text.hidden li:nth-child(6) {transform: translateX(-20px) translateY(-20px);}
 .fly-in-text.hidden li:nth-child(7) {transform: translateX(-600px) translateY(-200px);}
 .fly-in-text.hidden li:nth-child(8) {transform: translateX(30px) translateY(200px);}
+/* Resume button */
+button:focus {
+  border: none;
+  outline: none;
+  }
+  
+  .button {
+  height: 40px;
+  margin-top: 400px;
+  margin-left: 300px;
+  margin-right: 5px;
+  padding: 0px 16px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  background: #4C0100;
+  display: flex;
+  width: 15vw;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items:  center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  border-radius: 20px;
+  transform: scale(1,1);
+  transition: all 0.3s ease;
+  }
 
+  #last-n {
+    /* margin-left: 10p; */
+  }
+  
+  .button:hover {
+  transform: scale(1.1,1.1);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 1);
+  }
 /* End of Banner */
 
 /* About me section */
 #about-me-section {
   height:auto;
-  background-color: #FFFFFF;
-  color: #333333;
+  background-color: #333333;
+  color: #FFFFFF;
   word-spacing: normal;
 }
 
@@ -104,7 +144,7 @@ body {
   
 }
 .about-h3 div {
-  border: 1px solid blue;  
+  /* border: 1px solid blue;   */
   /* flex-basis: 50%; */
 }
 
@@ -183,7 +223,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #000;
+  background-color: #333333;
   overflow: hidden;
 }
 
@@ -200,7 +240,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #333333;
+  background-color: #4D4D4D;
   color: white;
   border-radius: 2px;
 }
