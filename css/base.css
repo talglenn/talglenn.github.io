@@ -527,7 +527,9 @@ footer {
 #about-text {
   font-size: 20px;
   font-family: 'Open sans', sans-serif;
-  
+  max-width: 700px;
+  width: 100%;
+  text-align: left;
 }
 
 .box-1 h1 {

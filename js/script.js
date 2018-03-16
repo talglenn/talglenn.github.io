@@ -48,6 +48,7 @@ $(document).ready(function(){
       color: "blue",
       highlight: "royalblue",
       label: "HTML"
+    
     },
     {
       value: 120,
@@ -61,6 +62,7 @@ $(document).ready(function(){
       highlight: "darkorange",
       label: "Javascript"
     }
+    
     
   ];
 
